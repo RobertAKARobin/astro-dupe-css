@@ -1,0 +1,35 @@
+{
+	"name": "astro-dupe-css",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "astro build",
+		"dev": "astro dev",
+		"lint": "eslint . && stylelint **/*.{css,scss,astro}",
+		"preview": "astro preview",
+		"prod": "npm run build && http-server ./dist",
+		"start": "astro dev"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"astro": "^1.0.0-rc.3",
+		"htmlparser2": "^8.0.1",
+		"image-size": "^1.0.2"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"astro-eslint-parser": "^0.4.4",
+		"eslint": "^8.20.0",
+		"eslint-plugin-astro": "^0.16.0",
+		"http-server": "^14.1.1",
+		"postcss-html": "^1.5.0",
+		"postcss-scss": "^4.0.4",
+		"sass": "^1.54.0",
+		"stylelint": "^14.9.1",
+		"stylelint-config-standard": "^26.0.0",
+		"stylelint-config-standard-scss": "^5.0.0",
+		"stylelint-order": "^5.0.0"
+	}
+}
