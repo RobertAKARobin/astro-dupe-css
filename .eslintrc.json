@@ -1,0 +1,34 @@
+{
+	"extends": [
+		"eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+		"plugin:astro/recommended"
+	],
+	"globals": {
+		"Astro": "readonly"
+	},
+	"overrides": [
+		{
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+				"extraFileExtensions": [".astro"]
+      },
+			"rules": {
+				"space-infix-ops": ["off"]
+			}
+		}
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"modules": true
+		},
+		"ecmaVersion": "latest",
+		"extraFileExtensions": [".astro"],
+		"project": "./tsconfig.json",
+		"sourceType": "module"
+	}
+}
